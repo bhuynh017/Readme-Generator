@@ -28,7 +28,7 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.createPromptModule(questions)
+    inquirer.prompt(questions)
     .then((inquirerAnswers) => {
         console.log("Generating..... Please wait....");
         writeToFile("./dist/README.md", generateMarkdown({ ...inquirerAnswers}));
