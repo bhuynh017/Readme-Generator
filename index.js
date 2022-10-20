@@ -41,7 +41,7 @@ const questions = [
     {
         type: "input",
         name: "dependencies",
-        message: "Any dependencies to install?",
+        message: "What dependency do I need to install to get started?",
         default: "npm i"
     },
 
@@ -55,12 +55,12 @@ const questions = [
     {
         type: "input",
         name: "usage",
-        message: "What does the usage of this repo?",
+        message: "What is the usage of this repo?",
     },
     {
         type: "input",
         name: "contributors",
-        message: "Who are the contributors of this repo?",
+        message: "Who contributed to this repo?",
     }
 ];
 
