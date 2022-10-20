@@ -30,8 +30,8 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
     .then((inquirerAnswers) => {
-        console.log("Generating..... Please wait....");
-        writeToFile("./dist/README.md", generateMarkdown({ ...inquirerAnswers}));
+        console.log("Please Wait While Creating File...");
+        writeToFile(".README.md", generateMarkdown({ ...inquirerAnswers}));
     })
 }
 
